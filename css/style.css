@@ -1,0 +1,1316 @@
+/* BODY */
+* {
+    box-sizing: border-box;
+  }*
+  
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2rem; /*tamaño de las letras*/
+  line-height: 1.6em; /* interlineado */  
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.3em;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+/* PARRAFOS */
+p {
+  margin-bottom: 1.6em; /*margen inferior funciona como enter entre parrafos*/
+}
+
+/* Aqui arranca la CABECERA */
+.header {
+  background: rgb(26, 26, 26);
+  color: rgb(201, 25, 25);
+  padding: 1.5rem 0;
+  position: fixed;
+  width: 100%;
+}
+
+.header a {
+  color: rgb(179, 179, 179);
+  text-decoration: none;
+}
+
+.container-cabecera {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 2fr;
+  grid-template-rows: 2fr;
+  grid-template-areas: 
+  "cabecera-izq btn-menu"
+  "menu .";
+}
+
+.cabecera-izq{
+  grid-area: cabecera-izq;  /*GRID*/
+  display: flex;
+  align-items: center;
+}
+
+/* logo */
+.logo {
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
+#your {
+  letter-spacing: 1px;
+  font-size: 2em;  
+  font-style:oblique;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+
+#car{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #ca0303;
+  letter-spacing: 3px;
+  font-size: 2em;
+  font-weight: bold;
+  font-style:oblique;
+}
+
+.imagen {
+  width: 100%;
+  height: 100%;
+}
+
+/* boton "menú" */
+.btn_menu{
+  grid-area: btn-menu;  /*GRID*/
+  color: rgb(179, 179, 179);
+  padding: 15px;
+  background-color: rgb(39, 39, 39);
+  border-radius: 10px;
+  margin-right: 10%;
+}
+
+.btn_menu a{
+  color: rgb(179, 179, 179);
+  text-decoration: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+.menu {
+  grid-area: menu;  /*GRID*/
+  margin-right: 2vw;
+  /*display: flex;*/
+  background-color: rgb(26, 26, 26); 
+  width: 50%;
+}
+
+ul.navigation {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+}
+  
+/* todos los "ul" que esten dentro de "menu" */
+
+/* si tiene tambien la clase show */
+ul.navigation.show {
+  display: flex;
+}
+
+ul.navigation li {
+  list-style: none;
+  margin: 0px 0px;
+  padding: 10px 20px;
+}
+
+ul.navigation li a {
+  text-decoration: none;
+  color: rgb(179, 179, 179);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+ul.navigation li:hover {
+  background-color: #353535;;
+  border-radius: 5px;
+}
+/* Termina CABECERA */
+
+/*------------ EMPIEZA HOME ------------ */ 
+
+/* SOBRE NOSOTROS */
+.content-sobre-nosotros{
+background-color:rgb(255, 255, 255);
+padding-top: 1rem;
+padding-bottom: 4rem;
+}
+
+.seccion-sobre-nosotros{
+display: flex;  
+flex-direction: column;
+/* lo alineamos al centro */
+align-items: center;
+width: 80%;
+margin: 0 auto;
+margin-top: 130px;
+}
+
+.sobre-nosotros-texto{
+  width: 100%;
+  text-align: justify;
+}
+
+.sobre-nosotros-texto p{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #333;
+  font-size: 1,2rem;
+  font-weight: 1000;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.sobre-nosotros-texto h1{
+  font-size: 2em;
+}
+
+.sobre-nosotros-img{
+  width: 100%;
+  padding-top: 3rem;
+}
+
+.nosotros-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+  
+/* TERMINA SOBRE NOSOTROS */
+
+/* EMPIEZA VEHICULOS DESTACADOS */
+.content-vehiculos-destacados{
+  background-color:rgb(19, 18, 18);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.content-vehiculos-destacados h1{
+  text-align: center;
+  color:rgb(255, 255, 255);
+  font-style: italic;
+  font-size: 2.5em;
+  padding-bottom: 6rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.content-vehiculos-destacados h2{
+  text-align: center;
+  font-style: italic;
+  font-size: 2rem;
+  color: rgb(138, 36, 36);
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  line-height: 2.5rem;
+}
+
+.seccion-ford h2{
+ text-align: left;
+}
+
+.seccion-lamborghini, .seccion-ford, .seccion-honda {
+  display: flex;  
+  flex-direction: column;
+  /* lo alineamos al centro */
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  background-color:rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-bottom: 6vh;
+}
+
+.seccion-honda{
+  margin-bottom: 0;
+}
+
+.honda-texto, .lamborghini-texto, .ford-texto, h3, .content-vehiculos-destacados p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(71, 71, 71);
+    font-weight: 1000;
+    font-size: 1rem;
+  }
+
+.content-vehiculos-destacados h3{
+  line-height: 1em;
+}
+
+.lamborghini-texto, .honda-texto {
+    width: 100%;
+    text-align: justify;
+    padding-right: 7%;
+    padding-left: 7%;
+}
+
+.ford-texto{
+    width: 100%;
+    text-align: justify;
+    padding-right: 7%;
+    padding-top: 3%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  }
+
+.lamborghini-img, .honda-cbr-img {
+  width: 100%;
+  padding-right: 7%;
+  padding-left: 7%;
+  padding-top: 3%;
+  padding-bottom: 7%;
+}
+
+.ford-raptor-img{
+  width: 100%;
+  padding-right: 7%;
+  padding-left: 7%;
+  padding-top: 7%;
+  padding-bottom: 3%;
+
+}
+
+.ford-img, .honda-img, .lambo-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+/* TERMINA VEHICULOS DESTACADOS */
+
+/*------------ TERMINA HOME ------------*/ 
+
+/*------------ EMPIEZA CATALOGO ------------*/ 
+
+/* TABLAS CATALOGO */
+
+.subheader {
+  height: 6em;
+  width: 100%;
+}
+
+.listaDeDeseos h1, .encabezado h1 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#tablaUsuario {
+  margin-bottom: 5%;
+}
+
+.Deportivos h2, .Sedanes h2, .Motocicletas h2, .Camionetas h2, legend {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Deportivos h2, .Sedanes h2, .Motocicletas h2, .Camionetas h2 {
+  font-size: 1.5em;
+  font-weight: 100;
+  color:rgb(179, 179, 179);
+  padding: 2px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: #333;
+  border: solid 1px #333;
+  border-radius: 5px;
+}
+
+.tablaMotocicletas {
+  margin-bottom: 5%;
+}
+
+.catalogo {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+th {
+  background-color: grey;
+  color:rgb(179, 179, 179);
+}
+
+/* se definen las propiedades de la tabla */
+tbody {
+  color: black;
+}
+
+tfoot {
+  color: red;
+}
+
+table, td, tr, th {
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-align:center;
+  font-size: small;
+}
+
+.thNombre, #nombreTd, .thColor, #colorTd, .thMail, #emailTd {
+  display: none;
+}
+
+table {
+  width: 100%;
+  margin: 0px auto;
+  background-color: rgb(179, 179, 179);
+  font: icon;
+}
+
+legend {
+  font-size: 85%;
+}
+
+#tablaPedidos {
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.resaltar {
+  background-color: tomato;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.desactivado {
+  background-color: #d2d2d2;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.txtInputDeseo, .txtInputBusqueda {
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 4px;
+  width: 100%; /*mobile*/
+  height: 30px;
+  margin-bottom: 0,5em; /*mobile*/
+  margin-top: 0,5em; /*mobile*/
+  margin-left: 0.05em;
+  background-color:rgb(179, 179, 179);
+}
+
+.containerPaginacion {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;  
+}
+
+.containerPaginacion p {
+  font-size: 0.5em;
+  border: 2.5px solid grey;
+  border-radius: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+#btn-Primero {
+  background-image:url("../img/iconos/primero.png");
+  background-size: contain;
+}
+
+#btn-Ultimo {
+  background-image:url("../img/iconos/ultimo.png");
+  background-size: contain;
+}
+
+#btn-Anterior, #btn-Siguiente, #btn-Primero, #btn-Ultimo {
+  padding: 7px;
+}
+
+.btnTablaDeseos {
+  text-align: center; /*mobile*/
+  margin-right: 1%;
+  margin-top: 1%; /*mobile*/
+}
+
+.btn-borrar {
+  background-image:url("../img/iconos/borrar.png");
+  background-size: contain;
+  background-color: #ca0303;
+}
+
+.btn-edit {
+  background-image:url("../img/iconos/editar.png");
+  background-size: contain;
+  background-color: green;
+}
+
+.btn-borrar, .btn-edit {
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 75%;
+  white-space: normal;
+  padding: 20%;
+  width: 3em;
+  margin: 0em;
+  height: 3em;
+}
+
+#btn-cargar, #btn-cargarTres, #btn-limpiarTabla, #btn-buscarPedido, #btn-quitarBusqueda, 
+#cerrarNuevoPedido, #cerrarBusqueda, #btn-guardar, #cerrarEdPedido  {
+  font-size: 60%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* se genera el tooltip que muestra las imagenes de los automoviles 
+publicados */
+.wt{
+  position: inherit;
+}
+
+.tooltip {
+  position: fixed;
+  top: 40%;
+  left: 5%;
+  display: none;
+}
+
+.wt:hover .tooltip {
+  display: block;
+}
+
+.imgtooltip{
+  display: flex;
+  width: 90%;
+  height: 90%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.iconocatalogo {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+}
+/* TERMINA SECCION CATALOGO */
+
+/*------------ TERMINA CATALOGO ------------*/ 
+ 
+/*------------ EMPIEZA SERVICIOS AL CLIENTE ------------*/ 
+
+.content-inicio{
+  background-color:rgb(255, 255, 255);
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  width: 100%;
+}
+
+.seccion-inicio{
+  display: flex;  
+  /* lo alineamos al centro */
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+  .inicio-texto{
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(22, 22, 22);
+  }
+
+.inicio-texto h2{
+  font-size: 1.6rem;
+  font-weight: 480;
+  margin: 0;
+}
+
+.inicio-texto h1{
+  font-family:sans-serif;
+  font-size: 2.5rem;
+  font-weight: 750;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.inicio-texto p {
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 520;
+  width: 80%;
+}
+
+.inicio-amarok{
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.amarok-img{
+  width: 100%;
+  height: 100%;
+}
+/* TERMINA SERVICIOS AL CLIENTE */
+
+/* EMPIEZA LISTA DE SERVICIOS */
+.content-lista-servicios{
+  background-color:rgb(17, 17, 17);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.content-lista-servicios h1{
+  text-align: center;
+  color:rgb(240, 238, 238);
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  text-decoration:underline;
+}
+
+.content-lista-servicios h2{
+  padding-top: 8vh;
+  color:rgb(175, 65, 65);
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+
+.content-lista-servicios li{
+  color:rgb(189, 189, 189);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-decoration-color: aliceblue;
+}
+
+.seccion-lista-servicios{
+  display: flex;  
+  flex-direction: column;
+  /* lo alineamos al centro */
+  width: 90%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  align-items: right;
+}
+/* ------------ TERMINA SERVICIOS AL CLIENTE ------------*/ 
+
+/* ------------ EMPIEZA CONTACTO ------------*/ 
+
+/* Datos de la empresa */
+.container {
+  display: grid;
+  grid-template-rows: 4fr;
+  grid-template-areas: 
+  "."
+  "seccionNuestrosDatos"
+  "seccionFormContacto"
+  "ubicacion";
+}
+
+.seccionNuestrosDatos {
+  grid-area: seccionNuestrosDatos;
+}
+
+.seccionFormContacto {
+  grid-area: seccionFormContacto;
+  background-color: grey;
+  margin-top: 1%;
+  padding-bottom: 1%;
+}
+
+.ubicacion {
+  grid-area: ubicacion;
+}
+
+.container h1 {
+  font-size: 1.3em;
+  margin-top: 6em;
+  margin-bottom: 1.3em;
+  text-align: center;
+  color:#333;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.contacto {
+  flex-wrap: row wrap;
+  justify-content: space-between;
+}
+
+.mediosContacto {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.logosRSociales {
+  margin-right: 10px;
+  width: 30px;
+}
+
+.redesSociales {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.facebook, .twitter, .instagram, .telegram {
+  display: inline-flex;
+  align-items: center;
+  margin: 0px auto;
+}
+.twitter, .instagram {
+  margin-right: 10%;;
+}
+
+.nuestrosdatos span {
+  font-weight: bold;
+  margin-right: 10px;;
+}
+
+.nuestrosdatos p {
+  margin-bottom: 0px;
+}
+
+.ubicacion h1{
+  text-align: left;
+  margin-left: -9%;
+  margin-bottom: 1%;
+  margin-top: 10%;
+}
+
+.nuestrosdatos, .formcontacto {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+.seccionDatosContacto, .seccionFormContacto, .ubicacion{
+  width: 100vw;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 0.1%;
+}
+
+.ubicacion {
+  text-align: center;
+}
+
+.seccionDatosContacto p {
+  font-size: 0.8em;
+}
+
+.nuestrosdatos, .formcontacto, .nombre, .apellido {
+  width: 97%;
+  margin: 0px auto;
+}
+
+.nuestrosdatos, .mediosContacto {
+  color:#333;
+}
+    
+/* Inicia formulario de contacto */
+.formcontacto {   
+  margin-top: 4%;
+  font-size: 100%;
+  text-align: center;
+}
+
+.nombre, .apellido, .telefono, .email, .comentario, .captcha {
+  background-color:  rgb(226,226,226);
+  margin-bottom: 10px;
+  width: 48%;
+}
+
+.nombre, .apellido, .telefono, .email { 
+  height: 30px;
+  border: 0px;
+  border-radius: 4px;
+}
+
+.telefono{
+  width: 28%;
+}
+
+.email {
+  width: 68%;
+}
+
+.comentario, .captcha {
+  width: 97%;
+}
+
+.iframe {
+  width:97%;
+  height:600px; 
+  border: 2px;
+}
+
+.comentario, .iframe {
+  overflow: auto;
+  resize: none;
+  border: 0px;
+  border-radius: 4px;
+}
+
+.captcha {
+  height: 30px;
+  border: 0px;
+  border-radius: 4px;
+}
+
+.imagenCaptcha {
+  margin-top: 10px;
+  border-radius: 4px;
+  width: 100%;
+  height: 20%;
+}
+
+.btn-enviar, button {
+  background-color: #333;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+  
+.btn-enviar{
+  font-size: 80%;
+  white-space: normal;
+  padding: 2%;
+  width: 30%;
+  height: 20%;
+  }
+
+/* Ventana modal */
+button {
+  font-size: 14px;
+  padding: 10px 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.modalContainer, .modalContainerCargar, .modalContainerEdicion, .modalContainerMensaje, .modalContainerBuscar{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;  
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+}
+
+.mostrar {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.ocultar {
+  display: none;
+}
+
+.modal {
+  background-color: #fff;
+  width: 600px;
+  max-width: 90%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modalPedido, .modalEdicionPedido, .modalMsge, .modalBuscarPedido {
+  background-color: #fff;
+  width: 600px;
+  max-width: 90%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal h1 {
+  color: #333;
+  margin: 0;
+}
+
+.modal p {
+  color:#335;
+  opacity: 0.7;
+  font-size: 17px;
+}
+/*Fin ventana modal*/  
+
+/*Final formulario de contacto*/
+
+/* ------------ TERMINA CONTACTO ------------*/ 
+  
+/* PIE DE PAGINA */
+.footer {
+    
+  padding: 0.8rem 0;
+  background: rgb(26, 26, 26);
+  color: rgb(201, 25, 25);
+  text-align: center;
+}
+
+#car2, .pie-de-pagina {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  width: 80%;
+}
+
+#car2{
+  color: #e40a0a;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.pie-de-pagina{
+  color:azure;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+/* TERMINA PIE DE PAGINA */
+
+
+/* ------------ DESKTOP ------------*/ 
+@media screen and (min-width: 600px) {
+    /* en desktop ocultamos siempre el boton del menu */
+    .btn_menu {
+        display: none;
+    }
+
+    .imagen {
+      margin-left: 1rem;
+    }
+
+    #your {
+      margin-left: 2rem;
+    }
+
+    .container-cabecera { /*GRID*/
+      display: grid;
+      justify-content: space-between;
+      align-items: center;
+      grid-template-columns: 3fr 1fr;
+      grid-template-areas: 
+      "cabecera-izq menu";
+    }
+
+    /* cambiamos la direccion del flex */
+    ul.navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* SOBRE NOSOTROS */
+    .content-sobre-nosotros{
+      background-color:rgb(255, 255, 255);
+      padding-top: 1rem;
+      padding-bottom: 6rem;
+    }
+
+    .seccion-sobre-nosotros{
+      display: flex;  
+      flex-direction: row;
+      justify-content: space-between;
+      /* lo alineamos al centro */
+      align-items: center;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 5%;
+    }
+    
+    .sobre-nosotros-texto{
+      width: 45%;
+      text-align: justify;
+    }
+
+    .sobre-nosotros-texto p{
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #333;
+      font-weight: 1000;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    .sobre-nosotros-texto h1{
+      font-size: 4em;
+    }
+
+    .sobre-nosotros-img{
+      width: 45%;
+    }
+    /* TERMINA SOBRE NOSOTROS */
+
+    /* EMPIEZA VEHICULOS DESTACADOS */
+    .content-vehiculos-destacados h1{
+      text-align: center;
+      color:rgb(255, 255, 255);
+      font-style: italic;
+      font-size: 4rem;
+      padding-bottom: 6rem;
+    }
+
+    .content-vehiculos-destacados h2{
+      text-align: left;
+      font-style: italic;
+      font-size: 3rem;
+      color: rgb(138, 36, 36);
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+    }
+
+    .seccion-ford h2{
+      text-align: left;
+    }
+
+    .seccion-lamborghini, .seccion-ford, .seccion-honda {
+      display: flex;  
+      flex-direction: row;
+      /* lo alineamos al centro */
+      align-items: center;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto;
+      background-color:rgb(255, 255, 255);
+      border-radius: 10px;
+      margin-bottom: 6vh;
+    }
+
+    .seccion-honda{
+      margin-bottom: 0;
+    }
+
+    .honda-texto, .lamborghini-texto, .ford-texto, h3{
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #333;
+      font-weight: 1000;
+      font-size: 1.8rem;
+    }
+
+    .lamborghini-texto, .honda-texto {
+      width: 45%;
+      text-align: justify;
+      padding-right: 3%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      padding-left: 3%;
+    }
+
+    .ford-texto{
+      width: 45%;
+      text-align: justify;
+      padding-right: 3%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      padding-left: 3%;
+    }
+
+    .lamborghini-img, .honda-cbr-img {
+      width: 55%;
+      padding-right: 3%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      padding-left: 3%;
+    }
+
+    .ford-raptor-img{
+      width: 55%;
+      padding-right: 3%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      padding-left: 3%;
+    }
+
+    .ford-img, .honda-img, .lambo-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 3px;
+    }
+    /* TERMINA VEHICULOS DESTACADOS */
+
+    /*COMIENZA SERVICIOS AL CLIENTE */
+    .content-inicio{
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+
+    .seccion-inicio{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin-top: 0rem;
+    }
+
+    .inicio-texto{
+      width: 45%;
+    }
+
+    .inicio-texto h2{
+      font-size: 2rem;
+    }
+
+    .inicio-texto h1{
+      font-size: 4rem;
+    }
+
+    .inicio-texto p {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 520;
+      width: 50%;
+    }
+
+    .inicio-amarok{
+      padding-top: 2rem;
+      width: 50%;
+    }
+    /* TERMINA SERVICIOS AL CLIENTE*/
+
+    /* EMPIEZA LISTA DE SERVICIOS */
+    .content-lista-servicios{
+      background-color:rgb(17, 17, 17);
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+
+    .content-lista-servicios h1{
+      font-size: 4rem;
+      padding-bottom: 2rem;
+      text-decoration:underline;
+    }
+
+    .content-lista-servicios h2{
+      padding-top: 8vh;
+      color:rgb(175, 65, 65);
+      font-size: 1.5rem;
+      font-family: sans-serif;
+    }
+
+    .content-lista-servicios li{
+      color:rgb(189, 189, 189);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      text-decoration-color: aliceblue;
+    }
+
+    .seccion-lista-servicios{ 
+      flex-direction: row;
+      /* lo alineamos al centro */
+      justify-content: space-between;
+      width: 100%;
+      padding-left: 15%;
+      padding-right: 15%;
+      margin: 0;
+    }
+    /* FIN LISTA DE SERVICIOS */
+
+    /* COMIENZA CATALOGO */
+    .subheader {
+      height: 8em;
+      width: 100%;
+    }
+
+    .listaDeDeseos h1, .encabezado h1 {
+      margin-bottom: 2%;
+      margin-top: 0%;
+      font-size: 3em;
+    }
+
+    .encabezado h1 {
+      font-size: 2em;
+    }
+    
+    #tablaPedidos {
+      table-layout: auto;
+      width: 100%;
+    }
+
+    .Deportivos h2, .Sedanes h2, .Motocicletas h2, .Camionetas h2 {
+      font-weight: normal;
+    }
+
+    .thNombre, #nombreTd, .thColor, #colorTd, .thMail, #emailTd, .anio, .precio {
+      display: revert;
+    }
+
+    th, td {
+      font-size: 1.3em;
+      height: 30px;
+    }
+
+    .tablaDeportivos, .tablaSedanes, .tablaCamionetas, .tablaMotocicletas, .tablaDeDeseos {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .formTablaDeseos {
+      text-align-last: center;
+    }
+
+    legend {
+      margin: 0px auto;
+      font-size: 120%;
+    }
+
+    .txtInputBusqueda {
+      height: 40px;
+      width: 48%; 
+      margin-bottom: 1em; 
+    }
+
+    .btnTablaDeseos {
+      margin-top: 0%;
+    }
+
+    button:hover {
+      background-color: grey;
+    }
+
+    .btn-borrar, .btn-edit {
+      padding: 5%;
+      width: 3em;
+      height: 3em;
+      font-size: small;
+    }
+
+    .btn-borrar:hover {
+      background-color: rgb(255, 94, 94);
+    }
+
+    .btn-edit:hover {
+      background-color: rgb(89, 155, 89)
+    }
+
+    #btn-cargar, #btn-cargarTres, #btn-limpiarTabla, #btn-buscarPedido, #btn-quitarBusqueda, #cerrarNuevoPedido, 
+    #cerrarBusqueda, #btn-guardar, #cerrarEdPedido {
+      font-size: 80%;
+      margin-top: 1%;
+      margin-bottom: 1%;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .containerPaginacion {
+      justify-content: center;  
+    }
+    
+    .containerPaginacion p {
+      font-size: small;
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+    
+    #btn-Anterior, #btn-Siguiente, #btn-Primero, #btn-Ultimo {
+      padding-right: 2em;
+      padding-left: 2em;
+      margin-right: 1em;
+      margin-left: 1em;
+      height: 2.5em;
+      justify-content: space-evenly;
+    }
+
+    .modalPedido, .modalEdicionPedido {
+      width: auto;
+      max-width: 80%;
+    }
+    
+    .txtInputDeseo {
+      width: 30%;
+    }
+
+    .txtInputBusqueda {
+      width: 50%;
+      height: 30px;
+    } 
+
+    .catalogo {
+      margin-right: 2em;
+      margin-left: 2em;
+    }
+
+    .tooltip {      
+      top: 20%;
+    }
+
+    .imgtooltip{
+      margin-left: 200px;
+      width: 900px;
+      height: 500px;
+    }
+    /*FIN CATALGO*/
+
+    /*CONTACTO*/
+    .container {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-areas:
+      "."
+      "seccionNuestrosDatos"
+      "seccionFormContacto"
+      "ubicacion";
+    }
+
+    .seccionFormContacto {
+      background-color: white;
+    } 
+      
+    .seccionDatosContacto {
+      margin-top: 1.6%;
+    }
+
+    .container h1 {
+      font-size: 3em;
+      margin-top: 12%;
+      margin-bottom: 4%;
+    }
+
+    .contacto {
+      display: flex;
+    }
+      
+    .redesSociales {
+      margin-top: 40px;
+      display: table-caption;
+    }
+
+    .ubicacion h1{
+      margin-left: -10%;
+      margin-bottom: 1%;
+      padding-left: 12%;
+      margin-top: 0%;
+      font-size: xx-large;
+    }
+
+    .nuestrosdatos p {
+      font-size: 1em;
+    }
+
+    .imagenCaptcha {
+      height: 40vh;
+    }
+        
+    /*Ventana modal*/
+    .modal {
+      max-width: 100%;
+    }
+    /*fin ventana modal*/
+    /*FIN CONTACTO*/
+}
