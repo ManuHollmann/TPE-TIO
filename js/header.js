@@ -1,5 +1,5 @@
 /* modificamos para que detecte al hacer click en "menu" */
-document.querySelector(".btn_menu").addEventListener("click", toggleMenu);
+document.querySelector(".buttonMenu").addEventListener("click", toggleMenu);
 
 
 /*selecciona "navigation" y realiza el a clase "show"*/
