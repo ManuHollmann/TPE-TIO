@@ -1,1 +1,0 @@
-Carpeta para guardar partes que podamos volver a usar, o que al final del trabajo podamos descartar.
