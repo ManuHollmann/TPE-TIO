@@ -1,0 +1,2 @@
+- Identar correctamente cada codigo.
+- Todo codigo mal identado ser vuelto al desarrollador para realizar las correcciones correspondientes.
