@@ -715,3 +715,38 @@ publicados */
 }
 
 .Deportivos h2, .Sedanes h2, .Motocicletas
+th {
+  background-color: grey;
+  color:rgb(179, 179, 179);
+}
+
+/* se definen las propiedades de la tabla */
+tbody {
+  color: black;
+}
+
+tfoot {
+  color: red;
+}
+
+table, td, tr, th {
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-align:center;
+  font-size: small;
+}
+
+.thNombre, #nombreTd, .thColor, #colorTd, .thMail, #emailTd {
+  display: none;
+}
+
+table {
+  width: 100%;
+  margin: 0px auto;
+  background-color: rgb(179, 179, 179);
+  font: icon;
+}
+
+legend {
+  font-size: 85%;
+}
