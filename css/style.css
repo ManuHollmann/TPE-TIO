@@ -30,6 +30,129 @@ p {
   margin-bottom: 1.6em; /*margen inferior funciona como enter entre parrafos*/
 }
 
+/*Cabecera y menu
+
+/* Aqui arranca la CABECERA */
+.header {
+  background: rgb(26, 26, 26);
+  color: rgb(201, 25, 25);
+  padding: 1.5rem 0;
+  position: fixed;
+  width: 100%;
+}
+
+.header a {
+  color: rgb(179, 179, 179);
+  text-decoration: none;
+}
+
+.container-cabecera {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 2fr;
+  grid-template-rows: 2fr;
+  grid-template-areas: 
+  "cabecera-izq btn-menu"
+  "menu .";
+}
+
+.cabecera-izq{
+  grid-area: cabecera-izq;  /*GRID*/
+  display: flex;
+  align-items: center;
+}
+
+/* logo */
+.logo {
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
+#your {
+  letter-spacing: 1px;
+  font-size: 2em;  
+  font-style:oblique;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+
+#car{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #ca0303;
+  letter-spacing: 3px;
+  font-size: 2em;
+  font-weight: bold;
+  font-style:oblique;
+}
+
+.imagen {
+  width: 100%;
+  height: 100%;
+}
+
+/* boton "menú" */
+.btn_menu{
+  grid-area: btn-menu;  /*GRID*/
+  color: rgb(179, 179, 179);
+  padding: 15px;
+  background-color: rgb(39, 39, 39);
+  border-radius: 10px;
+  margin-right: 10%;
+}
+
+.btn_menu a{
+  color: rgb(179, 179, 179);
+  text-decoration: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+.menu {
+  grid-area: menu;  /*GRID*/
+  margin-right: 2vw;
+  /*display: flex;*/
+  background-color: rgb(26, 26, 26); 
+  width: 50%;
+}
+
+ul.navigation {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+}
+  
+/* todos los "ul" que esten dentro de "menu" */
+
+/* si tiene tambien la clase show */
+ul.navigation.show {
+  display: flex;
+}
+
+ul.navigation li {
+  list-style: none;
+  margin: 0px 0px;
+  padding: 10px 20px;
+}
+
+ul.navigation li a {
+  text-decoration: none;
+  color: rgb(179, 179, 179);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+ul.navigation li:hover {
+  background-color: #353535;;
+  border-radius: 5px;
+}
+/* Termina CABECERA */
+
+
 /*------------ EMPIEZA HOME ------------ */ 
 
 /* SOBRE NOSOTROS */
