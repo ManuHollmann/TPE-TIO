@@ -230,3 +230,253 @@ margin-top: 130px;
   font-size: 0.8rem;
 }
 /* TERMINA PIE DE PAGINA */
+
+/* ------------ EMPIEZA CONTACTO ------------*/ 
+
+/* Datos de la empresa */
+.container {
+  display: grid;
+  grid-template-rows: 4fr;
+  grid-template-areas: 
+  "."
+  "seccionNuestrosDatos"
+  "seccionFormContacto"
+  "ubicacion";
+}
+
+.seccionNuestrosDatos {
+  grid-area: seccionNuestrosDatos;
+}
+
+.seccionFormContacto {
+  grid-area: seccionFormContacto;
+  background-color: grey;
+  margin-top: 1%;
+  padding-bottom: 1%;
+}
+
+.ubicacion {
+  grid-area: ubicacion;
+}
+
+.container h1 {
+  font-size: 1.3em;
+  margin-top: 6em;
+  margin-bottom: 1.3em;
+  text-align: center;
+  color:#333;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.contacto {
+  flex-wrap: row wrap;
+  justify-content: space-between;
+}
+
+.mediosContacto {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.logosRSociales {
+  margin-right: 10px;
+  width: 30px;
+}
+
+.redesSociales {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.facebook, .twitter, .instagram, .telegram {
+  display: inline-flex;
+  align-items: center;
+  margin: 0px auto;
+}
+.twitter, .instagram {
+  margin-right: 10%;;
+}
+
+.nuestrosdatos span {
+  font-weight: bold;
+  margin-right: 10px;;
+}
+
+.nuestrosdatos p {
+  margin-bottom: 0px;
+}
+
+.ubicacion h1{
+  text-align: left;
+  margin-left: -9%;
+  margin-bottom: 1%;
+  margin-top: 10%;
+}
+
+.nuestrosdatos, .formcontacto {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+.seccionDatosContacto, .seccionFormContacto, .ubicacion{
+  width: 100vw;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 0.1%;
+}
+
+.ubicacion {
+  text-align: center;
+}
+
+.seccionDatosContacto p {
+  font-size: 0.8em;
+}
+
+.nuestrosdatos, .formcontacto, .nombre, .apellido {
+  width: 97%;
+  margin: 0px auto;
+}
+
+.nuestrosdatos, .mediosContacto {
+  color:#333;
+}
+    
+/* Inicia formulario de contacto */
+.formcontacto {   
+  margin-top: 4%;
+  font-size: 100%;
+  text-align: center;
+}
+
+.nombre, .apellido, .telefono, .email, .comentario, .captcha {
+  background-color:  rgb(226,226,226);
+  margin-bottom: 10px;
+  width: 48%;
+}
+
+.nombre, .apellido, .telefono, .email { 
+  height: 30px;
+  border: 0px;
+  border-radius: 4px;
+}
+
+.telefono{
+  width: 28%;
+}
+
+.email {
+  width: 68%;
+}
+
+.comentario, .captcha {
+  width: 97%;
+}
+
+.iframe {
+  width:97%;
+  height:600px; 
+  border: 2px;
+}
+
+.comentario, .iframe {
+  overflow: auto;
+  resize: none;
+  border: 0px;
+  border-radius: 4px;
+}
+
+.captcha {
+  height: 30px;
+  border: 0px;
+  border-radius: 4px;
+}
+
+.imagenCaptcha {
+  margin-top: 10px;
+  border-radius: 4px;
+  width: 100%;
+  height: 20%;
+}
+
+.btn-enviar, button {
+  background-color: #333;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+  
+.btn-enviar{
+  font-size: 80%;
+  white-space: normal;
+  padding: 2%;
+  width: 30%;
+  height: 20%;
+  }
+
+/* Ventana modal */
+button {
+  font-size: 14px;
+  padding: 10px 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.modalContainer, .modalContainerCargar, .modalContainerEdicion, .modalContainerMensaje, .modalContainerBuscar{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;  
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+}
+
+.mostrar {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.ocultar {
+  display: none;
+}
+
+.modal {
+  background-color: #fff;
+  width: 600px;
+  max-width: 90%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modalPedido, .modalEdicionPedido, .modalMsge, .modalBuscarPedido {
+  background-color: #fff;
+  width: 600px;
+  max-width: 90%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal h1 {
+  color: #333;
+  margin: 0;
+}
+
+.modal p {
+  color:#335;
+  opacity: 0.7;
+  font-size: 17px;
+}
+/*Fin ventana modal*/  
+
+/*Final formulario de contacto*/
