@@ -480,3 +480,213 @@ button {
 /*Fin ventana modal*/  
 
 /*Final formulario de contacto*/
+
+*------------ EMPIEZA CATALOGO ------------*/ 
+
+/* TABLAS CATALOGO */
+
+.subheader {
+  height: 6em;
+  width: 100%;
+}
+
+.listaDeDeseos h1, .encabezado h1 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#tablaUsuario {
+  margin-bottom: 5%;
+}
+
+.Deportivos h2, .Sedanes h2, .Motocicletas h2, .Camionetas h2, legend {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Deportivos h2, .Sedanes h2, .Motocicletas h2, .Camionetas h2 {
+  font-size: 1.5em;
+  font-weight: 100;
+  color:rgb(179, 179, 179);
+  padding: 2px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: #333;
+  border: solid 1px #333;
+  border-radius: 5px;
+}
+
+.tablaMotocicletas {
+  margin-bottom: 5%;
+}
+
+.catalogo {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+th {
+  background-color: grey;
+  color:rgb(179, 179, 179);
+}
+
+/* se definen las propiedades de la tabla */
+tbody {
+  color: black;
+}
+
+tfoot {
+  color: red;
+}
+
+table, td, tr, th {
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-align:center;
+  font-size: small;
+}
+
+.thNombre, #nombreTd, .thColor, #colorTd, .thMail, #emailTd {
+  display: none;
+}
+
+table {
+  width: 100%;
+  margin: 0px auto;
+  background-color: rgb(179, 179, 179);
+  font: icon;
+}
+
+legend {
+  font-size: 85%;
+}
+
+#tablaPedidos {
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.resaltar {
+  background-color: tomato;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.desactivado {
+  background-color: #d2d2d2;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.txtInputDeseo, .txtInputBusqueda {
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 4px;
+  width: 100%; /*mobile*/
+  height: 30px;
+  margin-bottom: 0,5em; /*mobile*/
+  margin-top: 0,5em; /*mobile*/
+  margin-left: 0.05em;
+  background-color:rgb(179, 179, 179);
+}
+
+.containerPaginacion {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;  
+}
+
+.containerPaginacion p {
+  font-size: 0.5em;
+  border: 2.5px solid grey;
+  border-radius: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+#btn-Primero {
+  background-image:url("../img/iconos/primero.png");
+  background-size: contain;
+}
+
+#btn-Ultimo {
+  background-image:url("../img/iconos/ultimo.png");
+  background-size: contain;
+}
+
+#btn-Anterior, #btn-Siguiente, #btn-Primero, #btn-Ultimo {
+  padding: 7px;
+}
+
+.btnTablaDeseos {
+  text-align: center; /*mobile*/
+  margin-right: 1%;
+  margin-top: 1%; /*mobile*/
+}
+
+.btn-borrar {
+  background-image:url("../img/iconos/borrar.png");
+  background-size: contain;
+  background-color: #ca0303;
+}
+
+.btn-edit {
+  background-image:url("../img/iconos/editar.png");
+  background-size: contain;
+  background-color: green;
+}
+
+.btn-borrar, .btn-edit {
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 75%;
+  white-space: normal;
+  padding: 20%;
+  width: 3em;
+  margin: 0em;
+  height: 3em;
+}
+
+#btn-cargar, #btn-cargarTres, #btn-limpiarTabla, #btn-buscarPedido, #btn-quitarBusqueda, 
+#cerrarNuevoPedido, #cerrarBusqueda, #btn-guardar, #cerrarEdPedido  {
+  font-size: 60%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* se genera el tooltip que muestra las imagenes de los automoviles 
+publicados */
+.wt{
+  position: inherit;
+}
+
+.tooltip {
+  position: fixed;
+  top: 40%;
+  left: 5%;
+  display: none;
+}
+
+.wt:hover .tooltip {
+  display: block;
+}
+
+.imgtooltip{
+  display: flex;
+  width: 90%;
+  height: 90%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.iconocatalogo {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+}
+/* TERMINA SECCION CATALOGO */
+
+/*------------ TERMINA CATALOGO ------------*/ 
