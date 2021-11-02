@@ -750,3 +750,18 @@ table {
 legend {
   font-size: 85%;
 }
+
+.containerPaginacion p {
+  font-size: 0.5em;
+  border: 2.5px solid grey;
+  border-radius: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+#btn-Primero {
+  background-image:url("../img/iconos/primero.png");
+  background-size: contain;
+}
