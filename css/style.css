@@ -1,4 +1,5 @@
 /* BODY */
+/* SE AGREGAN NUEVAS FUNCIONALIDADES */
 * {
     box-sizing: border-box;
   }*
@@ -690,3 +691,77 @@ publicados */
 /* TERMINA SECCION CATALOGO */
 
 /*------------ TERMINA CATALOGO ------------*/ 
+*------------ EMPIEZA CATALOGO ------------*/ 
+
+/* TABLAS CATALOGO */
+
+.subheader {
+  height: 6em;
+  width: 100%;
+}
+
+.listaDeDeseos h1, .encabezado h1 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#tablaUsuario {
+  margin-bottom: 5%;
+}
+
+.Deportivos h2, .Sedanes h2, .Motocicletas h2, .Camionetas h2, legend {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Deportivos h2, .Sedanes h2, .Motocicletas
+th {
+  background-color: grey;
+  color:rgb(179, 179, 179);
+}
+
+/* se definen las propiedades de la tabla */
+tbody {
+  color: black;
+}
+
+tfoot {
+  color: red;
+}
+
+table, td, tr, th {
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-align:center;
+  font-size: small;
+}
+
+.thNombre, #nombreTd, .thColor, #colorTd, .thMail, #emailTd {
+  display: none;
+}
+
+table {
+  width: 100%;
+  margin: 0px auto;
+  background-color: rgb(179, 179, 179);
+  font: icon;
+}
+
+legend {
+  font-size: 85%;
+}
+
+.containerPaginacion p {
+  font-size: 0.5em;
+  border: 2.5px solid grey;
+  border-radius: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+#btn-Primero {
+  background-image:url("../img/iconos/primero.png");
+  background-size: contain;
+}
